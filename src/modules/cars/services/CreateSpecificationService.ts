@@ -1,5 +1,10 @@
 import { ISpecificationsRepository } from '../repositories/ISpecificantionsRepository'
 
+interface IRequest {
+    name: string
+    description: string
+}
+
 class CreateSpecificationService {
     constructor(private specificationsRepository: ISpecificationsRepository) {
 
