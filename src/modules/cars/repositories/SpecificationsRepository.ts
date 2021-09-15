@@ -1,8 +1,21 @@
+import { Specification } from "../model/Specification";
 import { ICreateSpecificationDTO, ISpecificationsRepository } from "./ISpecificantionsRepository";
 
 class SpecificationsRepository implements ISpecificationsRepository {
+    private specifications: Specification[]
+
+    constructor() {
+        this.specifications = []
+    }
+    
     create({ name, description }: ICreateSpecificationDTO): void {
-        throw new Error("Method not implemented.");
+        const specification = new Specification()
+        Object.assign(specification, {
+            name,
+            description,
+            created_at: new Date()
+        })
+        this.specifications.push(specification)
     }
     
 }
