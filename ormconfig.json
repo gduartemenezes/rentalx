@@ -4,5 +4,8 @@
   "port": 5432,
   "username": "developer",
   "password":"development",
-  "database": "rentalx_development"
+  "database": "rentalx_development",
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  }
 }
