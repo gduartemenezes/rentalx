@@ -1,7 +1,8 @@
 {
   "type": "postgres",
   "host": "localhost",
-  "username": "",
-  "password":"",
+  "port": 5432,
+  "username": "developer",
+  "password":"development",
   "database": "rentalx_development"
 }
